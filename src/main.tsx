@@ -4,12 +4,15 @@ import "./index.css";
 import App from "./App.tsx";
 import { ThemeProvider } from "./contexts/themeProvider.tsx";
 import { BrowserRouter } from "react-router-dom";
+import { ApiProvider } from "./contexts/ApiProvider.tsx";
 
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <BrowserRouter>
       <ThemeProvider>
-        <App />
+        <ApiProvider>
+          <App />
+        </ApiProvider>
       </ThemeProvider>
     </BrowserRouter>
   </StrictMode>,
