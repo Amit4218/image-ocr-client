@@ -55,7 +55,7 @@ function ApiKeyInput() {
 
   return (
     <div className="mt-3 flex items-center justify-center px-4">
-      <Card className="w-full max-w-2/4">
+      <Card className="w-full lg:max-w-2/4 md:max-w-2/3">
         <CardHeader className="space-y-1 text-center">
           <CardTitle className="text-2xl font-semibold">Connect API</CardTitle>
           <CardDescription>
